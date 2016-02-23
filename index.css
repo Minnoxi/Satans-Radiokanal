@@ -1,0 +1,55 @@
+body, html{
+    min-height: 100%;
+    padding:0;margin:0;
+    text-align: center;
+    background-image: url('http://localhost/bilder/background.jpg');
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #000;
+}
+
+@font-face {
+    font-family: 'Guttural'; /*a name to be used later*/
+    src: url('http://localhost/fonts/Guttural.ttf'); /*URL to font*/
+}
+
+h1{
+  font-size: 60px;
+  font-family: 'Guttural';
+  color: #7e0000;
+  animation-duration: 100ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+}
+
+
+.symbol img {
+  width: 60px;
+  position: relative;
+  margin-left: -600px;
+  margin-top: -110px;
+  animation-duration: 100ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+}
+
+.symbol2 img {
+  width: 60px;
+  position: relative;
+  margin-left: 600px;
+  margin-top: -110px;
+  animation-duration: 100ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
